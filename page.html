@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="sm.css">
+        <link rel="stylesheet" href="files.css">
+    </head>
+    <body>
+        <div id="divHead">
+            <button id="buttonShowPanel" class="button" style="height: 34px; width: 10px; left: 0px; top: 0px; position: absolute;"> </button>
+        </div>
+
+        <div id="mainPanel729">
+            <input id="inputTC" style="height: 34px; width: 200px; left: 15px; top: 0px; position: absolute;" value="">
+            <button id="buttonFiller" class="button" value="off" style="height: 34px; width: 110px; left: 214px; top: 0px; position: absolute;">Filler</button>
+            <div id="divOptionsOfFidler" class="divOptionsOfFidler" style="height: 120px; width: 200px; left: 214px; top: 34px; position: absolute; opacity: 1; background-color: lightgray; visibility: hidden;">
+                <p>
+                    <input id="inputCalcFiller" class="inputCalcFiller" type="checkbox" style="left: 214px; top: 40px; background-color: yellow;" value="off">
+                    <label for="inputCalcFiller">Include Calculator</label>
+                </p>
+                <p>
+                    <input id="inputOptionsFiller" class="inputOptionsFiller" type="checkbox" style="left: 214px; top: 60px; background-color: yellow;" value="off">
+                    <label for="inputOptionsFiller">Include Options</label>
+                </p>
+            </div>
+            <button id="buttonMaterials" class="button" value="off" style="height: 34px; width: 110px; left: 324px; top: 0px; position: absolute;" onclick="openFilesTab()">Media/SM</button>
+            <div id="divContainerMaterials" class="divContainerMaterials" style="height: 300px; width: 1400px; left: 15px; top: 34px; position: absolute; opacity: 1; background-color: lightgray; visibility: hidden;">
+
+                <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'Simple')">Simple</button>
+                        <button class="tablinks" onclick="openCity(event, 'Shared')">Shared</button>
+                        <button class="tablinks" onclick="openCity(event, 'Images as Source Materials')">Images as Source Materials</button>
+                        <button class="tablinks" onclick="openCity(event, 'Group')">Group</button>
+                </div>
+                  
+                  <!-- Tab content -->
+                <div id="Simple" class="tabcontent">
+                    <div class="row">
+                        <div class="column1">
+                            <div style="float: left;">
+                                <label style="text-align: left; float: left;">Image: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">JPG</button>
+                                    <button class="buttonFile" onclick="">JPG+</button>
+                                    <button class="buttonFile" onclick="">PNG</button>
+                                    <button class="buttonFile" onclick="">PNG+</button>
+                                    <button class="buttonFile" onclick="">BMP</button>
+                                    <button class="buttonFile" onclick="">BMP+</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">Video: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">AVI</button>
+                                    <button class="buttonFile" onclick="">FLV</button>
+                                    <button class="buttonFile" onclick="">M4V</button>
+                                    <button class="buttonFile" onclick="">MOV</button>
+                                    <button class="buttonFile" onclick="">MP4</button>
+                                    <button class="buttonFile" onclick="">MPEG</button>
+                                    <button class="buttonFile" onclick="">MPG</button>
+                                    <button class="buttonFile" onclick="">WMV</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">Audio: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">MP3</button>
+                                    <button class="buttonFile" onclick="">WAV</button>
+                                    <button class="buttonFile" onclick="">OGG</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">Office: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="DOC">DOC</button>
+                                    <button class="buttonFile" onclick="DOCX">DOCX</button>
+                                    <button class="buttonFile" onclick="XLS">XLS</button>
+                                    <button class="buttonFile" onclick="XLSX">XLSX</button>
+                                    <button class="buttonFile" onclick="PPT">PPT</button>
+                                    <button class="buttonFile" onclick="PPTX">PPTX</button>
+                                    <button class="buttonFile" onclick="ACCDB">ACCDB</button>
+                                    <button class="buttonFile" onclick="MDB">MDB</button>
+                                    <button class="buttonFile" onclick="RDATA">RDATA</button>
+                                    <button class="buttonFile" onclick="RMD">RMD</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">PDF:</label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">PDF</button>
+                                    <button class="buttonFile" onclick="">PDF+</button>
+                                    <button class="buttonFile" onclick="">PDF-zip</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">Text: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">TXT</button>
+                                    <button class="buttonFile" onclick="">TEXT</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">CSV: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">CSV</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">ZIP: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">ZIP</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">HTML: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">HTML</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">URL: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">URL</button>
+                                </div>
+                            </div>
+                            <div style="clear:both;">
+                                <label style="text-align: left; float: left;">Flash: </label>
+                                <div style="float: left;">
+                                    <button class="buttonFile" onclick="">SWF</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Shared" class="tabcontent">
+                    <div style="float: left;">
+                        <label style="text-align: left; float: left;">Image: </label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">JPG</button>
+                            <button class="buttonFile" onclick="">JPG+</button>
+                            <button class="buttonFile" onclick="">PNG</button>
+                            <button class="buttonFile" onclick="">PNG+</button>
+                            <button class="buttonFile" onclick="">BMP</button>
+                            <button class="buttonFile" onclick="">BMP+</button>
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                        <label style="text-align: left; float: left;">Video: </label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">AVI</button>
+                            <button class="buttonFile" onclick="">FLV</button>
+                            <button class="buttonFile" onclick="">M4V</button>
+                            <button class="buttonFile" onclick="">MOV</button>
+                            <button class="buttonFile" onclick="">MP4</button>
+                            <button class="buttonFile" onclick="">MPEG</button>
+                            <button class="buttonFile" onclick="">MPG</button>
+                            <button class="buttonFile" onclick="">WMV</button>
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                        <label style="text-align: left; float: left;">Audio: </label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">MP3</button>
+                            <button class="buttonFile" onclick="">WAV</button>
+                            <button class="buttonFile" onclick="">OGG</button>
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                        <label style="text-align: left; float: left;">Office: </label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="DOC">DOC</button>
+                            <button class="buttonFile" onclick="DOCX">DOCX</button>
+                            <button class="buttonFile" onclick="XLS">XLS</button>
+                            <button class="buttonFile" onclick="XLSX">XLSX</button>
+                            <button class="buttonFile" onclick="PPT">PPT</button>
+                            <button class="buttonFile" onclick="PPTX">PPTX</button>
+                            <button class="buttonFile" onclick="ACCDB">ACCDB</button>
+                            <button class="buttonFile" onclick="MDB">MDB</button>
+                            <button class="buttonFile" onclick="RDATA">RDATA</button>
+                            <button class="buttonFile" onclick="RMD">RMD</button>
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                        <label style="text-align: left; float: left;">PDF:</label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">PDF</button>
+                            <button class="buttonFile" onclick="">PDF+</button>
+                            <button class="buttonFile" onclick="">PDF zip</button>
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                        <label style="text-align: left; float: left;">ZIP: </label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">ZIP</button>
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                        <label style="text-align: left; float: left;">Flash: </label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">SWF</button>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div id="Images as Source Materials" class="tabcontent">
+                    <div style="float: left;">
+                        <label style="text-align: left; float: left;">Image: </label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">JPG</button>
+                            <button class="buttonFile" onclick="">JPG+</button>
+                            <button class="buttonFile" onclick="">PNG</button>
+                            <button class="buttonFile" onclick="">PNG+</button>
+                            <button class="buttonFile" onclick="">BMP</button>
+                            <button class="buttonFile" onclick="">BMP+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Group" class="tabcontent">
+                    <div style="float: left;">
+                        <label style="text-align: left; float: left;">Image: </label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">Images group</button>
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                        <label style="text-align: left; float: left;">PDF:</label>
+                        <div style="float: left;">
+                            <button class="buttonFile" onclick="">2 PDF group</button>
+                            <button class="buttonFile" onclick="">60 PDF group</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="sm.js"></script>
+        <script type="text/javascript" src="files.js"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    </body>
+</html>

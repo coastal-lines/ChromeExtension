@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column1 {
+    float: left;
+    height: 250px;
+    padding: 0px;
+    width: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column h4 {
+    text-align: center;
+  }
+
+  .buttonFile {
+    width: 80px;
+    height: 20px; 
+    font-size : 14px;
+    font-weight : bold;
+  }
