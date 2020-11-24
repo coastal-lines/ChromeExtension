@@ -10,3 +10,9 @@ function openFilesTab() {
         containerMaterials.style.visibility = "hidden";
     }
 }
+
+function TestApi() {
+    let response = await fetch("https://localhost:44317/api/values/");
+    response.json();
+    response.status;
+}
