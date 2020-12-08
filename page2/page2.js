@@ -10,7 +10,5 @@ function showAdditionalOptions() {
 }
 
 function turnOnAutoFiller() {
-    if () {
-
-    }
+    
 }
