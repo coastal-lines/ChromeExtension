@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container" style="width: 800px; float: left;">
+      <div class="row ">
+          <div class="col-12 input-group">
+            <input type="text" class="form-control col-4">
+            <div>
+              <button id="btn1" class="btn btn-outline-secondary" type="button" onclick="showAdditionalOptions()">Options</button>
+              <button id="btn2" class="btn btn-outline-secondary" type="button">Auto filler</button>
+              <button id="btn3" class="btn btn-outline-secondary" type="button">Button 3</button>
+              <form id="formAdditionalOptions" class="form-horizontal" style="width: 200px; height: 100px; background-color:gainsboro; visibility: hidden;">
+                <div class="form-group">
+                  <label class="form-check-label" style="padding-left: 25px;">
+                    <input type="checkbox" class="form-check-input" value="">Additional option 1
+                  </label>
+                  <label class="form-check-label" style="padding-left: 25px;">
+                    <input type="checkbox" class="form-check-input" value="">Additional option 2
+                  </label>
+                  <label class="form-check-label" style="padding-left: 25px;">
+                    <input type="checkbox" class="form-check-input" value="">Additional option 3
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div> 
+    
+    <script type="text/javascript" src="page2.js"></script>
+  </body>
+</html>
