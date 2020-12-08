@@ -1,47 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>checklist sample</title>
-  <!-- style -->
-  <style>
-    .dropdown-menu > li.checkbox{
-      padding: 3px 20px;
-    }
-  </style>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-</head>
-<body>
-  target
-  <span class="dropdown">
-    <span class="glyphicon glyphicon-filter dropdown-toggle" data-toggle="dropdown" aria-expanded="true"></span>
-    <!-- modal -->
-    <ul class="dropdown-menu" role="menu">
-      <li class="checkbox keep-open"><label><input type="checkbox">option 1</label></li>
-      <li class="checkbox keep-open"><label><input type="checkbox">option 2</label></li>
-      <li class="checkbox keep-open"><label><input type="checkbox">option 3</label></li>
-      <li class="checkbox keep-open"><label><input type="checkbox">option 4</label></li>
-      <li><a class="btn">select</a></li>
-    </ul>
-  </span>
-  </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <!-- custom script -->
-  <script>
-    $('.keep-open').click(function(e) {
-      if (/input|label/i.test(e.target.tagName)){
-        var parent = $(e.target).parent();
-        if(parent.hasClass('checkbox')){
-          var checkbox = parent.find('input[type=checkbox]');
-          checkbox.prop("checked", !checkbox.prop("checked"));
-          return false;
-        }
-      }
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class=".container-md">
+      <div class="row">
+        <div class="col-sm-3">.col-sm-3</div>
+        <div class="col-sm-3">.col-sm-3</div>
+        <div class="col-sm-3">.col-sm-3</div>
+        <div class="col-sm-3">.col-sm-3</div>
+      </div>
+    </div>
+  </body>
 </html>

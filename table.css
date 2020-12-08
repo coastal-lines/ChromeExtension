@@ -1,0 +1,9 @@
+.rallyTable {
+    width: 100%;
+}
+
+tr, th, td {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
