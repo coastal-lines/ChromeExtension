@@ -16,7 +16,7 @@
             <div>
               <button id="btn1" class="btn btn-outline-secondary" type="button" onclick="showAdditionalOptions()">Options</button>
               <button id="btn2" class="btn btn-outline-secondary" type="button">Auto filler</button>
-              <button id="btn3" class="btn btn-outline-secondary" type="button">Button 3</button>
+              <button id="btn3" class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#exampleModal">Data constructor</button>
               <form id="formAdditionalOptions" style="width: 200px; height: 100px; background-color:gainsboro; visibility: hidden;">
                 <div>
                   <label class="form-check-label" style="padding-left: 25px;">
@@ -30,6 +30,35 @@
                   </label>
                 </div>
               </form>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document" style="width: 800px; height: 600px;">
+              <div class="modal-content" style="width: 800px; height: 600px;">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Data constructor</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="leftSidePanel" class="btn-group-vertical">
+                    <button id="btn" class="btn btn-outline-secondary" type="button"><i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i></button>
+                    <button id="btn" class="btn btn-outline-secondary" type="button">2</button>
+                    <button type="submit" class="btn btn-primary">
+                      <i class="icon-user icon-white"></i> Sign in
+                    </button>
+                    <p class = "h1 bg-custom"><span class = "glyphicon glyphicon-comment"></span> Заголовок</p>
+                  </div>
+                  <div id="previewDataPanel" >
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
       </div>
