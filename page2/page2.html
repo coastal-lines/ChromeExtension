@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="page2.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js'></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <link ref="stylesheet" href="page2/page2.css">
   </head>
   <body>
     <div class="container" style="width: 800px; float: left;">
@@ -37,10 +37,11 @@
           </div>
 
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document" style="width: 800px; height: 600px;">
-              <div class="modal-content" style="width: 800px; height: 600px;">
+            <div class="modal-dialog" role="document" style="width: 900px; height: 700px;">
+              <div class="modal-content" style="width: 900px; height: 700px;">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Data constructor</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Media constructor</h5>
+                  <button>123</button>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -62,19 +63,131 @@
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                      ...
-
+                      <div style="float: left;">
+                        <button class="buttonFile" data-type="simple" data-file="doc" onclick="addMediaToListForLoad(this)">DOC</button>
+                        <button class="buttonFile" onclick="DOCX">DOCX</button>
+                        <button class="buttonFile" onclick="XLS">XLS</button>
+                        <button class="buttonFile" onclick="XLSX">XLSX</button>
+                        <button class="buttonFile" onclick="PPT">PPT</button>
+                        <button class="buttonFile" onclick="PPTX">PPTX</button>
+                        <button class="buttonFile" onclick="ACCDB">ACCDB</button>
+                        <button class="buttonFile" onclick="MDB">MDB</button>
+                        <button class="buttonFile" onclick="RDATA">RDATA</button>
+                        <button class="buttonFile" onclick="RMD">RMD</button>
+                        <button class="buttonFile" onclick="">CSV</button>
+                        <button class="buttonFile" onclick="">TXT</button>
+                        <button class="buttonFile" onclick="">TEXT</button>
+                      </div>
+                      <div style="float: left;">
+                        <button class="buttonFile" onclick="TestApi()">JPG</button>
+                        <button class="buttonFile" onclick="">JPG+</button>
+                        <button class="buttonFile" onclick="">PNG</button>
+                        <button class="buttonFile" onclick="">PNG+</button>
+                        <button class="buttonFile" onclick="">BMP</button>
+                        <button class="buttonFile" onclick="">BMP+</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">MP3</button>
+                        <button class="buttonFile" onclick="">WAV</button>
+                        <button class="buttonFile" onclick="">OGG</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">PDF</button>
+                        <button class="buttonFile" onclick="">PDF+</button>
+                        <button class="buttonFile" onclick="">PDFzip</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">ZIP</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">HTML</button>
+                        <button class="buttonFile" onclick="">URL</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">SWF</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">AVI</button>
+                        <button class="buttonFile" onclick="">FLV</button>
+                        <button class="buttonFile" onclick="">M4V</button>
+                        <button class="buttonFile" onclick="">MOV</button>
+                        <button class="buttonFile" onclick="">MP4</button>
+                        <button class="buttonFile" onclick="">MPEG</button>
+                        <button class="buttonFile" onclick="">MPG</button>
+                        <button class="buttonFile" onclick="">WMV</button>
+                      </div>
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                      ...
+                      <div style="float: left;">
+                        <button class="buttonFile" onclick="DOC">DOC</button>
+                        <button class="buttonFile" onclick="DOCX">DOCX</button>
+                        <button class="buttonFile" onclick="XLS">XLS</button>
+                        <button class="buttonFile" onclick="XLSX">XLSX</button>
+                        <button class="buttonFile" onclick="PPT">PPT</button>
+                        <button class="buttonFile" onclick="PPTX">PPTX</button>
+                        <button class="buttonFile" onclick="ACCDB">ACCDB</button>
+                        <button class="buttonFile" onclick="MDB">MDB</button>
+                        <button class="buttonFile" onclick="RDATA">RDATA</button>
+                        <button class="buttonFile" onclick="RMD">RMD</button>
+                      </div>
+                      <div style="float: left;">
+                        <button class="buttonFile" onclick="TestApi()">JPG</button>
+                        <button class="buttonFile" onclick="">JPG+</button>
+                        <button class="buttonFile" onclick="">PNG</button>
+                        <button class="buttonFile" onclick="">PNG+</button>
+                        <button class="buttonFile" onclick="">BMP</button>
+                        <button class="buttonFile" onclick="">BMP+</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">MP3</button>
+                        <button class="buttonFile" onclick="">WAV</button>
+                        <button class="buttonFile" onclick="">OGG</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">PDF</button>
+                        <button class="buttonFile" onclick="">PDF+</button>
+                        <button class="buttonFile" onclick="">PDFzip</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">ZIP</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">SWF</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">AVI</button>
+                        <button class="buttonFile" onclick="">FLV</button>
+                        <button class="buttonFile" onclick="">M4V</button>
+                        <button class="buttonFile" onclick="">MOV</button>
+                        <button class="buttonFile" onclick="">MP4</button>
+                        <button class="buttonFile" onclick="">MPEG</button>
+                        <button class="buttonFile" onclick="">MPG</button>
+                        <button class="buttonFile" onclick="">WMV</button>
+                      </div>
                     </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                      ...
+                      <div style="float: left;">
+                        <button class="buttonFile" onclick="">JPG</button>
+                        <button class="buttonFile" onclick="">JPG+</button>
+                        <button class="buttonFile" onclick="">PNG</button>
+                        <button class="buttonFile" onclick="">PNG+</button>
+                        <button class="buttonFile" onclick="">BMP</button>
+                        <button class="buttonFile" onclick="">BMP+</button>
+                      </div>
                     </div>
                     <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">
-                      ...
+                      <div style="clear:both; float: left;">
+                        <button class="buttonFile" onclick="">Img group</button>
+                      </div>
+                      <div style="clear:both; float: left;">
+                          <button class="buttonFile" onclick="">2PDF grp</button>
+                          <button class="buttonFile" onclick="">60PDF grp</button>
+                      </div>
                     </div>
                   </div>
+                </div>
+                <div id='' class="" style="border: black 1px solid; bottom: 0px; width: 900px; height: 100px; background-color: honeydew; position: absolute; bottom: 0px;">
+                  <span id="filesForLoadList"></span>
                 </div>
               </div>
             </div>
@@ -83,10 +196,12 @@
             <div class='wrapper' style="  border: black 3px solid;">
               <div id='left1' class='container' style="  border: black 1px solid;">
                 <div>You can move these elements between these two containers</div>
+                <button>123</button>
                 <div>Moving them anywhere else isn't quite possible</div>
                 <div>There also the possibility of moving elements around in the same container, changing their position</div>
               </div>
               <div id='right1' class='container' style="  border: black 1px solid;">
+                <button>456</button>
                 <div>This is the default use case. You only need to specify the containers you want to use</div>
                 <div>More interactive use cases lie ahead</div>
                 <div>Make sure to check out the <a href='https://github.com/bevacqua/dragula#readme'>documentation on GitHub!</a></div>
@@ -97,5 +212,6 @@
     </div> 
     
     <script type="text/javascript" src="page2.js"></script>
+    <script type="text/javascript" src="mediaConstructor.js"></script>
   </body>
 </html>

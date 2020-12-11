@@ -13,10 +13,7 @@ function turnOnAutoFiller() {
     
 }
 
-function dragAndDrop() {
-    dragula([document.getElementById('btn1'), document.getElementById('frm1')]);
-}
-
 window.onload = function() {
     dragula([document.getElementById('left1'), document.getElementById('right1')]);
 }
+
