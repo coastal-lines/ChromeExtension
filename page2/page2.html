@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js'></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link ref="stylesheet" href="page2/page2.css">
   </head>
@@ -16,7 +17,7 @@
           <div class="col-12 input-group">
             <input type="text" class="form-control col-4">
             <div>
-              <button id="btn1" class="btn btn-outline-secondary" type="button" onclick="showAdditionalOptions()">Options</button>
+              <button id="" class="btn btn-outline-secondary" type="button" onclick="showAdditionalOptions()">Options</button>
               <button id="btn2" class="btn btn-outline-secondary" type="button">Auto filler</button>
               <button id="btn3" class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#exampleModal">Data constructor</button>
               <form id="formAdditionalOptions" style="width: 200px; height: 100px; background-color:gainsboro; visibility: hidden;">
@@ -44,21 +45,51 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div id="leftSidePanel" class="btn-group-vertical">
-                    <button class="btn btn-outline-secondary" type="button">11111<i class="fa fa-trash-o fa-lg"></i></button>
-                    <i class="fas fa-camera fa-3x"></i>
-                    <button>
-                      <i class="fas fa-thumbs-up"></i> Like
-                    </button>
-                  </div>
-                  <div id="previewDataPanel">
+                <div>
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Simple</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Shared</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Images As Source Materials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact2" role="tab" aria-controls="pills-contact" aria-selected="false">Groups</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      ...
 
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      ...
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                      ...
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">
+                      ...
+                    </div>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class='wrapper' style="  border: black 3px solid;">
+              <div id='left1' class='container' style="  border: black 1px solid;">
+                <div>You can move these elements between these two containers</div>
+                <div>Moving them anywhere else isn't quite possible</div>
+                <div>There also the possibility of moving elements around in the same container, changing their position</div>
+              </div>
+              <div id='right1' class='container' style="  border: black 1px solid;">
+                <div>This is the default use case. You only need to specify the containers you want to use</div>
+                <div>More interactive use cases lie ahead</div>
+                <div>Make sure to check out the <a href='https://github.com/bevacqua/dragula#readme'>documentation on GitHub!</a></div>
               </div>
             </div>
           </div>
