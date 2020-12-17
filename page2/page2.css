@@ -8,3 +8,13 @@
     height: 58px;
     font-size: 12;
 }
+
+#fillerOptions autoFillerButton {
+    width: 38px;
+    height: 38px;
+    float: left;
+}
+
+#autoFillerButton {
+    float: left;
+}
