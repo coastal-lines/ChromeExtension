@@ -20,3 +20,10 @@ function addFileIntoPageList(file) {
     let tempText = uiUserList.innerText;
     uiUserList.innerText = tempText + " " + file;
 }
+
+//Debug
+function ShowListFiles() {
+    for (let index = 0; index < listOfFiles.length; index++) {
+        console.log(listOfFiles[index]);
+    }
+}
